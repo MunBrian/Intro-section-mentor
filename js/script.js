@@ -27,52 +27,51 @@ closeMenuBtn.addEventListener("click", () => {
 });
 
 //nav ul list
-list1.addEventListener("click", () => {
+list1.addEventListener("mouseover", () => {
   featuresCard.classList.toggle("hidden");
   firstImg1.style.display = "none";
-
-  if (secondImg1.classList.contains("hidden")) {
-    secondImg1.classList.remove("hidden");
-  } else {
-    firstImg1.style.display = "block";
-    secondImg1.classList.add("hidden");
-  }
+  secondImg1.classList.remove("hidden");
 });
 
-list2.addEventListener("click", () => {
+list1.addEventListener("mouseout", () => {
+  featuresCard.classList.toggle("hidden");
+  firstImg1.style.display = "block";
+  secondImg1.classList.add("hidden");
+});
+
+list2.addEventListener("mouseover", () => {
   companyCard.classList.toggle("hidden");
-
   firstImg2.style.display = "none";
+  secondImg2.classList.remove("hidden");
+});
 
-  if (secondImg2.classList.contains("hidden")) {
-    secondImg2.classList.remove("hidden");
-  } else {
-    firstImg2.style.display = "block";
-    secondImg2.classList.add("hidden");
-  }
+list2.addEventListener("mouseout", () => {
+  companyCard.classList.toggle("hidden");
+  firstImg2.style.display = "block";
+  secondImg2.classList.add("hidden");
 });
 
 //mobile ul list
-mobileList1.addEventListener("click", () => {
+mobileList1.addEventListener("mouseover", () => {
   mobileFeaturesCard.classList.toggle("hidden");
   mblFirstImg1.style.display = "none";
-
-  if (mblSecondImg1.classList.contains("hidden")) {
-    mblSecondImg1.classList.remove("hidden");
-  } else {
-    mblFirstImg1.style.display = "block";
-    mblSecondImg1.classList.add("hidden");
-  }
+  mblSecondImg1.classList.remove("hidden");
 });
 
-mobileList2.addEventListener("click", () => {
+mobileList1.addEventListener("mouseout", () => {
+  mobileFeaturesCard.classList.toggle("hidden");
+  mblFirstImg1.style.display = "block";
+  mblSecondImg1.classList.add("hidden");
+});
+
+mobileList2.addEventListener("mouseover", () => {
   mobileCompanyCard.classList.toggle("hidden");
   mblFirstImg2.style.display = "none";
+  mblSecondImg2.classList.remove("hidden");
+});
 
-  if (mblSecondImg2.classList.contains("hidden")) {
-    mblSecondImg2.classList.remove("hidden");
-  } else {
-    mblFirstImg2.style.display = "block";
-    mblSecondImg2.classList.add("hidden");
-  }
+mobileList2.addEventListener("mouseout", () => {
+  mobileCompanyCard.classList.toggle("hidden");
+  mblFirstImg2.style.display = "block";
+  mblSecondImg2.classList.add("hidden");
 });
