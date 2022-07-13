@@ -37,7 +37,7 @@ Users should be able to:
 
 ### What I learned
 
--How to configure tailwindcss into my project
+-How to configure tailwindcss into my project\
 -How to use tailwindcss in styling html
 
 
