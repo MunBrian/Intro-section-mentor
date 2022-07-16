@@ -27,28 +27,16 @@ closeMenuBtn.addEventListener("click", () => {
 });
 
 //nav ul list
-list1.addEventListener("mouseover", () => {
+list1.addEventListener("click", () => {
   featuresCard.classList.toggle("hidden");
-  firstImg1.style.display = "none";
-  secondImg1.classList.remove("hidden");
+  firstImg1.classList.toggle("hidden");
+  secondImg1.classList.toggle("hidden");
 });
 
-list1.addEventListener("mouseout", () => {
-  featuresCard.classList.toggle("hidden");
-  firstImg1.style.display = "block";
-  secondImg1.classList.add("hidden");
-});
-
-list2.addEventListener("mouseover", () => {
+list2.addEventListener("click", () => {
   companyCard.classList.toggle("hidden");
-  firstImg2.style.display = "none";
-  secondImg2.classList.remove("hidden");
-});
-
-list2.addEventListener("mouseout", () => {
-  companyCard.classList.toggle("hidden");
-  firstImg2.style.display = "block";
-  secondImg2.classList.add("hidden");
+  firstImg2.classList.toggle("hidden");
+  secondImg2.classList.toggle("hidden");
 });
 
 //mobile ul list

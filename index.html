@@ -16,19 +16,56 @@
             <img src="images/logo.svg" class="h-5 mt-1" alt="logo">
             <div class="text-sm">
                 <ul class="hidden md:flex md:items-center md:space-x-6">
-                    <li id="list-1">
+                    <li id="list-1" class="flex flex-col">
                         <a class="flex items-center space-x-3 text-mediumGray hover:text-almostBlack" href="#">
                         <span>Features</span> 
                         <img class="h-2" id="1-first-img" src="images/icon-arrow-down.svg" alt="">
                         <img class="h-2 hidden" id="1-second-img" src="images/icon-arrow-up.svg" alt="">
                         </a>
+                        <!--Features Drop down-->
+                        <div id="features" class="hidden absolute bg-white p-4 rounded-lg shadow-lg shadow-gray-300 featurePosition w-26">
+                            <ul class="flex flex-col space-y-2 justify-center text-mediumGray">
+                                <li>
+                                    <a href="#" class="flex items-center space-x-3 text-sm hover:text-almostBlack">
+                                        <img class="h-3" src="images/icon-todo.svg" alt="">
+                                        <span>Todo List</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center space-x-3 text-sm hover:text-almostBlack">
+                                        <img class="h-3" src="images/icon-calendar.svg" alt="">
+                                        <span>Calendar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center space-x-3 text-sm hover:text-almostBlack">
+                                        <img class="h-3" src="images/icon-reminders.svg" alt="">
+                                        <span>Reminders</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center space-x-3 text-sm hover:text-almostBlack">
+                                        <img class="h-3" src="images/icon-planning.svg" alt="">
+                                        <span>Planning</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
-                    <li id="list-2">
-                        <a class="flex items-center space-x-3 text-mediumGray hover:text-almostBlack" href="#">
-                        <span>Company</span> 
-                        <img class="h-2" id="2-first-img" src="images/icon-arrow-down.svg" alt=""> 
-                        <img class="h-2 hidden" id="2-second-img" src="images/icon-arrow-up.svg" alt="">
-                        </a>
+                    <li id="list-2" class="flex flex-col">
+                            <a class="flex items-center space-x-3 text-mediumGray hover:text-almostBlack" href="#">
+                            <span>Company</span> 
+                            <img class="h-2" id="2-first-img" src="images/icon-arrow-down.svg" alt=""> 
+                            <img class="h-2 hidden" id="2-second-img" src="images/icon-arrow-up.svg" alt="">
+                            </a>
+                        <!--Company Drop down-->
+                        <div id="companyCard" class="hidden absolute bg-white shadow-lg shadow-gray-300 p-4 rounded-lg companyPosition w-26">
+                            <ul class="flex flex-col space-y-1 justify-center text-mediumGray">
+                                <li><a href="#" class="text-sm hover:text-almostBlack">History</a></li>
+                                <li><a href="#" class="text-sm hover:text-almostBlack">Our Team</a></li>
+                                <li><a href="#" class="text-sm hover:text-almostBlack">Blog</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li><a href="#" class="text-mediumGray hover:text-almostBlack">Careers</a></li>
                     <li><a href="#" class="text-mediumGray hover:text-almostBlack">About  </a></li>
@@ -46,46 +83,6 @@
             <span class="hamburger-middle"></span>
             <span class="hamburger-bottom"></span>
         </button>
-
-    <!--Menus-->
-        <!--Features Drop down-->
-        <div id="features" class="hidden absolute bg-white p-4 rounded-lg shadow-lg shadow-gray-300 featurePosition w-26">
-            <ul class="flex flex-col space-y-1 justify-center">
-                <li>
-                    <a href="#" class="flex items-center space-x-3 text-sm">
-                    <img class="h-3" src="images/icon-todo.svg" alt="">
-                    <span>Todo List</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="flex items-center space-x-3 text-sm">
-                    <img class="h-3" src="images/icon-calendar.svg" alt="">
-                    <span>Calendar</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="flex items-center space-x-3  text-sm">
-                    <img class="h-3" src="images/icon-reminders.svg" alt="">
-                    <span>Reminders</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="flex items-center space-x-3  text-sm">
-                    <img class="h-3" src="images/icon-planning.svg" alt="">
-                    <span>Planning</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <!--Company Drop down-->
-        <div id="companyCard" class="hidden absolute bg-white shadow-lg shadow-gray-300 p-4 rounded-lg companyPosition w-26">
-            <ul class="flex flex-col space-y-1 justify-center">
-                <li><a href="#" class="text-sm">History</a></li>
-                <li><a href="#" class="text-sm">Our Team</a></li>
-                <li><a href="#" class="text-sm">Blog</a></li>
-            </ul>
-        </div>
 
         <!--Mobile menu-->
         <div id="mobile-menu" class="hidden absolute flex top-0 right-0 w-screen md:hidden">
@@ -108,25 +105,25 @@
                             <div id="mobile-features-card" class="hidden bg-almostWhite p-4 rounded-lg">
                                 <ul class="flex flex-col space-y-3 justify-center text-mediumGray">
                                     <li>
-                                        <a href="#" class="flex items-center space-x-3 text-sm">
+                                        <a href="#" class="flex items-center space-x-3 text-sm hover:text-almostBlack">
                                         <img class="h-4" src="images/icon-todo.svg" alt="">
                                         <span>Todo List</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="flex items-center space-x-3 text-sm">
+                                        <a href="#" class="flex items-center space-x-3 text-sm hover:text-almostBlack">
                                         <img class="h-4" src="images/icon-calendar.svg" alt="">
                                         <span>Calendar</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="flex items-center space-x-3 text-sm">
+                                        <a href="#" class="flex items-center space-x-3 text-sm hover:text-almostBlack">
                                         <img class="h-4" src="images/icon-reminders.svg" alt="">
                                         <span>Reminders</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="flex items-center space-x-3 text-sm">
+                                        <a href="#" class="flex items-center space-x-3 text-sm hover:text-almostBlack">
                                         <img class="h-4" src="images/icon-planning.svg" alt="">
                                         <span>Planning</span>
                                         </a>
@@ -141,9 +138,9 @@
                             </a>
                             <div id="mobile-company-card" class="hidden bg-almostWhite p-4 rounded-lg">
                                 <ul class="flex flex-col space-y-3 justify-center text-mediumGray">
-                                    <li><a href="#" class="text-sm">History</a></li>
-                                    <li><a href="#" class="text-sm">Our Team</a></li>
-                                    <li><a href="#" class="text-sm">Blog</a></li>
+                                    <li><a href="#" class="text-sm hover:text-almostBlack">History</a></li>
+                                    <li><a href="#" class="text-sm hover:text-almostBlack">Our Team</a></li>
+                                    <li><a href="#" class="text-sm hover:text-almostBlack">Blog</a></li>
                                 </ul>
                             </div>
                         </li>
